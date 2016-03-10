@@ -39,7 +39,7 @@ module ActiveAdmin
         super style: "text-align: right;"
 
         div class: 'active-admin-environment-tag' do
-          div Rails.env
+          div Rails.env.capitalize
         end
       end
     end
