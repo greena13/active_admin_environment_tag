@@ -1,0 +1,24 @@
+.active-admin-environment-tag {
+  position: fixed;
+  top: 175px;
+  left: 0;
+  border: none;
+  width: 20px;
+}
+
+.active-admin-environment-tag > div {
+  -moz-transform: rotate(90deg);  /* FF3.5+ */
+  -o-transform: rotate(90deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(90deg);  /* Saf3.1+, Chrome */
+  filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5708);  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5708)"; /* IE8 */
+
+  background-color: <%= ActiveAdminEnvironmentTag.environment_colors.fetch(Rails.env.to_s.to_sym, ActiveAdminEnvironmentTag.environment_colors[:default]) %>;
+
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin-left: -45px;
+  overflow: scroll;
+}
