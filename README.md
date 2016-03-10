@@ -40,6 +40,15 @@ default: '#c9d6e3'
 
 You can override these colors (including the default) or specify other environments using the `environment_colors` option to provide a hash of environment names and colors. If ActiveAdminEnvironmentTag is run in a Rails environment that does not have a color associated with it, `default` is used.
 
+### tag_position
+
+By default, the environment tag will appear in the top left area of the screen, however you can display it in the bottom left of the screen by specifying
+
+    config.tag_position = :bottom_left
+    
+
+Currently no other positions are supported as the left margin of the screen is the only area where the tag does not overlap content.
+
 ## Contributing
 
 1. Fork it ( https://github.com/greena13/active_admin_environment_tag/fork )

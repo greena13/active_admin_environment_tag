@@ -1,9 +1,11 @@
 .active-admin-environment-tag {
   position: fixed;
-  top: 175px;
-  left: 0;
-  border: none;
-  width: 20px;
+  <% position = ActiveAdminEnvironmentTag.tag_placement %>
+
+  top: <%= position[:top] %>;
+  left: <%= position[:left] %>;
+  right: <%= position[:right] %>;
+  bottom: <%= position[:bottom] %>;
 }
 
 .active-admin-environment-tag > div {
