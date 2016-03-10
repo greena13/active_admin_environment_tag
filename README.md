@@ -40,6 +40,13 @@ default: '#c9d6e3'
 
 You can override these colors (including the default) or specify other environments using the `environment_colors` option to provide a hash of environment names and colors. If ActiveAdminEnvironmentTag is run in a Rails environment that does not have a color associated with it, `default` is used.
 
+
+```ruby
+config.environment_colors = {
+      staging: '#FCBF34'
+  }
+```
+
 ### tag_position
 
 By default, the environment tag will appear in the top left area of the screen, however you can display it in the bottom left of the screen by specifying
